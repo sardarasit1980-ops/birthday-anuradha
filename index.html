@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Anuradha! ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ব্যাকগ্রাউন্ড মিউজিক (অনলাইন লিংক) -->
+    <audio id="bgMusic" loop>
+        <source src="https://soundhelix.com" type="audio/mp3">
+    </audio>
+
+    <!-- প্রথম স্ক্রিন: গিফট ওপেন করার পেজ -->
+    <div class="screen active" id="screen1">
+        <h1>Happy Birthday, Anuradha</h1>
+        <p>A Cinematic Journey Created Just For You</p>
+        <button onclick="nextScreen(2)">Open Your Gift 🎁</button>
+    </div>
+
+    <!-- দ্বিতীয় স্ক্রিন: লাইট অন করার পেজ -->
+    <div class="screen" id="screen2">
+        <h2>The Stage is Set...</h2>
+        <button id="lightBtn" onclick="turnOnLights()">💡 Turn On Lights</button>
+    </div>
+
+    <!-- তৃতীয় স্ক্রিন: চিঠি বা বেস্টি মেসেজ -->
+    <div class="screen" id="screen3">
+        <div class="letter-box">
+            <h2>My Dearest Anuradha, ❤</h2>
+            <p>Today isn't just a date on the calendar; it's the day the most beautiful part of my life was born. Having a bestie like you is a true blessing. Every moment with you is like a frame from a beautiful movie, and I'm so lucky to have you in my life. HAPPY BIRTHDAY, MY BESTIE! 🎂</p>
+            <button onclick="nextScreen(4)">Our Memories 🌸</button>
+        </div>
+    </div>
+
+    <!-- চতুর্থ স্ক্রিন: ফটো গ্যালারি -->
+    <div class="screen" id="screen4">
+        <h2>Moments in Time ✨</h2>
+        <div class="gallery">
+            <div class="card"><img src="Images/pic1.jpg" alt="Memory 1"><p>My Best Friend ❤</p></div>
+            <div class="card"><img src="Images/pic2.jpg" alt="Memory 2"><p>Crazy Moments ✨</p></div>
+            <div class="card"><img src="Images/pic3.jpg" alt="Memory 3"><p>Cute Anuradha 💖</p></div>
+            <div class="card"><img src="Images/pic4.jpg" alt="Memory 4"><p>Friends Forever 🪷</p></div>
+        </div>
+        <button onclick="nextScreen(1)" class="replay-btn">Replay The Magic 🔄</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
